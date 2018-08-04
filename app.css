@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+#bits {
+    display: flex;
+}
+
+.col {
+    width: 10px;
+    list-style: none;
+}
+
+.bit {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    text-align: center;
+    color: black;
+}
+
+
+.bit.animate {
+    animation: appear 0.4s ease-in-out forwards;
+}
+
+@keyframes appear {
+    0% {
+        color: black;
+    }
+    33% {
+        color: white;
+    }
+    100% {
+        color: lime;
+    }
+
+}
